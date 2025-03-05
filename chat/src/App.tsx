@@ -13,7 +13,7 @@ type dataType = {
 const App = () => {
   const [data, setData] = useState<dataType[]>([])
   useEffect(() => {
-    fetch('http://localhost:8000/msg')
+    fetch('https://message-board-k9u5.onrender.com')
       .then(res => res.json())
       .then(res => setData(res))
 
