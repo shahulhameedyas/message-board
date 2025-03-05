@@ -16,7 +16,7 @@ const Send = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    let response = await axios.post("http://localhost:8000/msg", data)
+    let response = await axios.post("https://message-board-k9u5.onrender.com", data)
     if (response) {
       setData({
         fname: "",
